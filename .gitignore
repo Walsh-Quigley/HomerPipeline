@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+
+# include these specific files
+!annotate_peaks.py
+!README.md
+
+# Don't ignore .gitignore itself
+!.gitignore
