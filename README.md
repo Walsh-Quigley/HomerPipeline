@@ -111,3 +111,26 @@ YourWorkingDirectory/
     └── your_data_annotated.txt # Output file (created by script)
 ```
 
+## Output
+The final output file (`your_data_annotated.txt`) is a **tab-separated text file** that combines your original input data with HOMER annotation results. The output contains the following columns:
+
+| Column Name           | Description                                           |
+|-----------------------|-------------------------------------------------------|
+| chromosome            | Chromosome name (from input)                          |
+| location              | Genomic position (from input)                         |
+| direction             | Strand (from input)                                   |
+| frag_numb             | Unique identifier (from input)                        |
+| Annotation            | Primary genomic feature annotation                    |
+| Detailed Annotation   | Extended annotation details                           |
+| Distance to TSS       | Distance to nearest transcription start site (bp)     |
+| Nearest PromoterID    | ID of the nearest promoter                            |
+| Entrez ID             | NCBI Entrez Gene ID                                   |
+| Nearest Unigene       | Nearest UniGene cluster ID                            |
+| Nearest Refseq        | Nearest RefSeq transcript ID                          |
+| Nearest Ensembl       | Nearest Ensembl gene ID                               |
+| Gene Name             | Official gene symbol                                  |
+| Gene Alias            | Alternative gene names                                |
+| Gene Description      | Full gene description                                 |
+| Gene Type             | Type of gene (e.g., protein-coding, lncRNA)           |
+
+**Note:** Any additional columns from your input file will also be preserved in the output.
